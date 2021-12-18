@@ -7,6 +7,7 @@ import { Heading } from "./Components/Heading";
 import Personel from "./Components/Personel";
 import { PersonelList } from "./Components/PersonelList";
 import Status from "./Components/Status";
+import { Text } from "./Components/Text";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -34,7 +35,8 @@ function App() {
       <Status status="success" /> */}
 
       {/* <Button value="click on me" onClick={clickHandler} /> */}
-      <Form />
+      {/* <Form /> */}
+      <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text>
     </div>
   );
 }
