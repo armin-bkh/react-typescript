@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 type userType = {
     name: string,
@@ -6,27 +6,27 @@ type userType = {
 }
 
 export const User = () => {
-    const [user, setUser] = useState<userType | null>(null);
+    const [user, setUser] = useState<userType>({} as userType);
 
-    const loginHandler = () => {
+    useEffect(() => {
         setUser({
             name: "Armin Bakhshi",
             email: "arminbkh0921@yahoo.com",
         })
-    }
+    }, []);
 
-    const logoutHandler = () => {
-        setUser(null);
-    }
+    // const logoutHandler = () => {
+    //     setUser(null);
+    // }
 
     return (
         <div>
             <h1>hello {user ? user.name : 'guest'}</h1>
-        <button onClick={loginHandler}>login</button>
-        <button onClick={logoutHandler}>logout</button>
+        {/* <button onClick={loginHandler}>login</button> */}
+        {/* <button onClick={logoutHandler}>logout</button> */}
 
-            <p>your name is {user?.name}</p>
-            <p>your email is {user?.email}</p>
+            <p>your name is {user.name}</p>
+            <p>your email is {user.email}</p>
 
         </div>
     )
