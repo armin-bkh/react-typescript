@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Greet from "./Components/Greet";
+import Personel from "./Components/Personel";
+import { PersonelList } from "./Components/PersonelList";
 
 function App() {
+  const [personel, setPersonel] = useState([
+    {id: 1, firstName: "Armin", lastName: "Bakhshi"},
+    {id: 2, firstName: "Shahin", lastName: "Samadi"},
+    {id: 3, firstName: "Ariya", lastName: "Sadeghi"},
+    {id: 4, firstName: "Matin", lastName: "Keyvan"},
+    {id: 5, firstName: "Radin", lastName: "Sadraee"},
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greet name="Armin" age={17} isLoggedIn={false} />
+      <PersonelList personel={personel} />
     </div>
   );
 }
