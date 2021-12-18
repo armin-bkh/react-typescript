@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import { Heading } from "./Components/Heading";
 import Personel from "./Components/Personel";
 import { PersonelList } from "./Components/PersonelList";
+import { User } from "./Components/State/User";
 import Status from "./Components/Status";
 import { Text } from "./Components/Text";
 
@@ -24,9 +25,9 @@ function App() {
 
   return (
     <div>
-      <Greet name="Armin" age={17} isLoggedIn={true} />
-      <Personel firstName="Armin" lastName="Bakhshi" />
-      <PersonelList personel={personel} />
+      {/* <Greet name="Armin" age={17} isLoggedIn={true} /> */}
+      {/* <Personel firstName="Armin" lastName="Bakhshi" /> */}
+      {/* <PersonelList personel={personel} /> */}
   {/* <Header>
       <Heading>
         Hello world
@@ -38,6 +39,7 @@ function App() {
       {/* <Button value="click on me" onClick={clickHandler} /> */}
       {/* <Form /> */}
       {/* <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text> */}
+      <User />
     </div>
   );
 }
