@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Button } from "./Components/Button";
+import { Form } from "./Components/Form";
 import Greet from "./Components/Greet";
 import Header from "./Components/Header";
 import { Heading } from "./Components/Heading";
@@ -14,17 +16,25 @@ function App() {
   //   {id: 4, firstName: "Matin", lastName: "Keyvan"},
   //   {id: 5, firstName: "Radin", lastName: "Sadraee"},
   // ])
+
+  const clickHandler = (e: React.MouseEvent<HTMLButtonElement>, value: string) =>{
+    console.log(e, value);
+  }
+
   return (
     <div>
       {/* <Greet name="Armin" age={17} isLoggedIn={false} />
       <PersonelList personel={personel} /> */}
-  <Header>
+  {/* <Header>
       <Heading>
         Hello world
       </Heading>
   </Header>
   <Greet name="Armin" age={20} />
-      <Status status="success" />
+      <Status status="success" /> */}
+
+      {/* <Button value="click on me" onClick={clickHandler} /> */}
+      <Form />
     </div>
   );
 }
