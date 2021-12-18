@@ -10,13 +10,13 @@ import Status from "./Components/Status";
 import { Text } from "./Components/Text";
 
 function App() {
-  // const [personel, setPersonel] = useState([
-  //   {id: 1, firstName: "Armin", lastName: "Bakhshi"},
-  //   {id: 2, firstName: "Shahin", lastName: "Samadi"},
-  //   {id: 3, firstName: "Ariya", lastName: "Sadeghi"},
-  //   {id: 4, firstName: "Matin", lastName: "Keyvan"},
-  //   {id: 5, firstName: "Radin", lastName: "Sadraee"},
-  // ])
+  const [personel, setPersonel] = useState([
+    {id: 1, firstName: "Armin", lastName: "Bakhshi"},
+    {id: 2, firstName: "Shahin", lastName: "Samadi"},
+    {id: 3, firstName: "Ariya", lastName: "Sadeghi"},
+    {id: 4, firstName: "Matin", lastName: "Keyvan"},
+    {id: 5, firstName: "Radin", lastName: "Sadraee"},
+  ])
 
   const clickHandler = (e: React.MouseEvent<HTMLButtonElement>, value: string) =>{
     console.log(e, value);
@@ -24,8 +24,9 @@ function App() {
 
   return (
     <div>
-      {/* <Greet name="Armin" age={17} isLoggedIn={false} />
-      <PersonelList personel={personel} /> */}
+      <Greet name="Armin" age={17} isLoggedIn={true} />
+      <Personel firstName="Armin" lastName="Bakhshi" />
+      <PersonelList personel={personel} />
   {/* <Header>
       <Heading>
         Hello world
@@ -36,7 +37,7 @@ function App() {
 
       {/* <Button value="click on me" onClick={clickHandler} /> */}
       {/* <Form /> */}
-      <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text>
+      {/* <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text> */}
     </div>
   );
 }
