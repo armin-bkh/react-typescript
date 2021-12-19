@@ -9,20 +9,22 @@ import { PersonelList } from "./Components/PersonelList";
 import { User } from "./Components/State/User";
 import Status from "./Components/Status";
 import { Text } from "./Components/Text";
+import { Box } from "./Components/useContext/Box";
+import { ThemeProvider } from "./Components/useContext/ThemeProvider";
 import { Counter } from "./Components/useReducer/Counter";
 
 function App() {
-  const [personel, setPersonel] = useState([
-    {id: 1, firstName: "Armin", lastName: "Bakhshi"},
-    {id: 2, firstName: "Shahin", lastName: "Samadi"},
-    {id: 3, firstName: "Ariya", lastName: "Sadeghi"},
-    {id: 4, firstName: "Matin", lastName: "Keyvan"},
-    {id: 5, firstName: "Radin", lastName: "Sadraee"},
-  ])
+  // const [personel, setPersonel] = useState([
+  //   {id: 1, firstName: "Armin", lastName: "Bakhshi"},
+  //   {id: 2, firstName: "Shahin", lastName: "Samadi"},
+  //   {id: 3, firstName: "Ariya", lastName: "Sadeghi"},
+  //   {id: 4, firstName: "Matin", lastName: "Keyvan"},
+  //   {id: 5, firstName: "Radin", lastName: "Sadraee"},
+  // ])
 
-  const clickHandler = (e: React.MouseEvent<HTMLButtonElement>, value: string) =>{
-    console.log(e, value);
-  }
+  // const clickHandler = (e: React.MouseEvent<HTMLButtonElement>, value: string) =>{
+  //   console.log(e, value);
+  // }
 
   return (
     <div>
@@ -41,7 +43,10 @@ function App() {
       {/* <Form /> */}
       {/* <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text> */}
       {/* <User /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <ThemeProvider>
+      <Box />
+      </ThemeProvider>
     </div>
   );
 }
