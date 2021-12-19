@@ -6,7 +6,7 @@ type userType = {
 }
 
 export const User = () => {
-    const [user, setUser] = useState<userType>({} as userType);
+    const [user, setUser] = useState({} as userType);
 
     useEffect(() => {
         setUser({

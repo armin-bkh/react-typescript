@@ -6,11 +6,12 @@ import Header from "./Components/Header";
 import { Heading } from "./Components/Heading";
 import Personel from "./Components/Personel";
 import { PersonelList } from "./Components/PersonelList";
-import { User } from "./Components/State/User";
+import { User } from "./Components/useContext/User";
 import Status from "./Components/Status";
 import { Text } from "./Components/Text";
 import { Box } from "./Components/useContext/Box";
 import { ThemeProvider } from "./Components/useContext/ThemeProvider";
+import { UserProvider } from "./Components/useContext/UserProvider";
 import { Counter } from "./Components/useReducer/Counter";
 
 function App() {
@@ -44,9 +45,13 @@ function App() {
       {/* <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text> */}
       {/* <User /> */}
       {/* <Counter /> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
       <Box />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <UserProvider>
+        <User />
+      </UserProvider>
     </div>
   );
 }
