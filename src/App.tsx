@@ -16,6 +16,8 @@ import { Counter } from "./Components/useReducer/Counter";
 import { InputFocus } from "./Components/useRef/InputFocus";
 import { Timer } from "./Components/useRef/Timer";
 import ClassCounter from "./Components/class components/Counter";
+import { Container } from "./Components/Props components/Container";
+import { Profile } from "./Components/Props components/Profile";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -57,7 +59,8 @@ function App() {
       </UserProvider> */}
       {/* <InputFocus /> */}
       {/* <Timer /> */}
-      <ClassCounter message="Hello world" />
+      {/* <ClassCounter message="Hello world" /> */}
+      <Container isLoggedIn component={Profile} />
     </div>
   );
 }
