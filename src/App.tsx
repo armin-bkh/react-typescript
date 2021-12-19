@@ -9,6 +9,7 @@ import { PersonelList } from "./Components/PersonelList";
 import { User } from "./Components/State/User";
 import Status from "./Components/Status";
 import { Text } from "./Components/Text";
+import { Counter } from "./Components/useReducer/Counter";
 
 function App() {
   const [personel, setPersonel] = useState([
@@ -39,7 +40,8 @@ function App() {
       {/* <Button value="click on me" onClick={clickHandler} /> */}
       {/* <Form /> */}
       {/* <Text styles={{padding: '1rem', color: "#ccc"}}>Hello world</Text> */}
-      <User />
+      {/* <User /> */}
+      <Counter />
     </div>
   );
 }
