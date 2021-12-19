@@ -13,6 +13,8 @@ import { Box } from "./Components/useContext/Box";
 import { ThemeProvider } from "./Components/useContext/ThemeProvider";
 import { UserProvider } from "./Components/useContext/UserProvider";
 import { Counter } from "./Components/useReducer/Counter";
+import { InputFocus } from "./Components/useRef/InputFocus";
+import { Timer } from "./Components/useRef/Timer";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -49,9 +51,11 @@ function App() {
       <Box />
       </ThemeProvider> */}
 
-      <UserProvider>
+      {/* <UserProvider>
         <User />
-      </UserProvider>
+      </UserProvider> */}
+      {/* <InputFocus /> */}
+      <Timer />
     </div>
   );
 }
