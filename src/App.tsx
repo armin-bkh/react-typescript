@@ -15,6 +15,7 @@ import { UserProvider } from "./Components/useContext/UserProvider";
 import { Counter } from "./Components/useReducer/Counter";
 import { InputFocus } from "./Components/useRef/InputFocus";
 import { Timer } from "./Components/useRef/Timer";
+import ClassCounter from "./Components/class components/Counter";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -55,7 +56,8 @@ function App() {
         <User />
       </UserProvider> */}
       {/* <InputFocus /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <ClassCounter message="Hello world" />
     </div>
   );
 }

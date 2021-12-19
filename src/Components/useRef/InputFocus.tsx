@@ -1,10 +1,10 @@
-import React, { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
+import React, { forwardRef, useRef } from "react";
 
 export const InputFocus = () => {
-    const inputRef = useRef<HTMLInputElement>(null);
+    const inputRef = useRef<HTMLInputElement>(null!);
 
     const focusHandler = () => {
-        inputRef.current?.focus();
+        inputRef.current.focus();
     }
 
     return (
