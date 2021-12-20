@@ -19,6 +19,7 @@ import ClassCounter from "./Components/class components/Counter";
 import { Container } from "./Components/Props components/Container";
 import { Profile } from "./Components/Props components/Profile";
 import { List } from "./Components/Generics/List";
+import { Check } from "./Components/Restrict/Check";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -65,13 +66,14 @@ function App() {
       {/* <List list={['Armin', 'Matin', 'TypeScript']} onClick={(item)=> console.log(item)} />
       <List list={[1, 2, 3, 4, 5, 6, 7]} onClick={(item)=> console.log(item)} />
       <List list={[false, true, 213, "string"]} onClick={(item)=> console.log(item)} /> */}
-      <List list={[
+      {/* <List list={[
         {id: 1, first: "Armin", last: "Bakhshi"},
         {id: 2, first: "Matin", last: "Keyvan"},
         {id: 3, first: "Soroush", last: "Ramezani"},
         {id: 4, first: "Hamid", last: "heydari"},
         {id: 5, first: "Saman", last: "Rajabi"},
-      ]} onClick={(item)=> console.log(item)} />
+      ]} onClick={(item)=> console.log(item)} /> */}
+      <Check value="Armin" isNagative />
     </div>
   );
 }
