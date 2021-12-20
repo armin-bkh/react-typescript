@@ -20,6 +20,7 @@ import { Container } from "./Components/Props components/Container";
 import { Profile } from "./Components/Props components/Profile";
 import { List } from "./Components/Generics/List";
 import { Check } from "./Components/Restrict/Check";
+import { Toast } from "./Components/Template literal Exclude/Template literal Exclude";
 
 function App() {
   // const [personel, setPersonel] = useState([
@@ -73,7 +74,8 @@ function App() {
         {id: 4, first: "Hamid", last: "heydari"},
         {id: 5, first: "Saman", last: "Rajabi"},
       ]} onClick={(item)=> console.log(item)} /> */}
-      <Check value="Armin" isNagative />
+      {/* <Check value="Armin" isNagative /> */}
+      <Toast message="Hello world" position="center" />
     </div>
   );
 }
