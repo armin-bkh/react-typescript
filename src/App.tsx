@@ -9,7 +9,8 @@ import Personel from "./Components/Personel";
 import { PersonelList } from "./Components/PersonelList";
 import { User } from "./Components/useContext/User";
 import Status from "./Components/Status";
-import { Text } from "./Components/Text";
+// import { Text } from "./Components/Text";
+import { Text } from "./Components/Text/Text";
 import { Box } from "./Components/useContext/Box";
 import { ThemeProvider } from "./Components/useContext/ThemeProvider";
 import { UserProvider } from "./Components/useContext/UserProvider";
@@ -77,9 +78,13 @@ function App() {
       ]} onClick={(item)=> console.log(item)} /> */}
       {/* <Check value="Armin" isNagative /> */}
       {/* <Toast message="Hello world" position="center" /> */}
-      <Button variant="balck" type="submit" onClick={()=> console.log("clicked")}>
+      {/* <Button variant="balck" type="submit" onClick={()=> console.log("clicked")}>
         hello
-        </Button>
+        </Button> */}
+        <Text as="label" htmlFor="name" size="sm" variant="primary">coding is my world</Text>
+        <Text as="h1" size="sm" variant="primary">coding is my world</Text>
+        <Text as="p" size="sm" variant="primary">coding is my world</Text>
+        <Text size="sm" variant="primary">coding is my world</Text>
     </div>
   );
 }
