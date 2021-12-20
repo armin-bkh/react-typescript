@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button } from "./Components/Button";
+// import { Button } from "./Components/Button";
+import { Button } from "./Components/Button/Button";
 import { Form } from "./Components/Form";
 import Greet from "./Components/Greet";
 import Header from "./Components/Header";
@@ -75,7 +76,10 @@ function App() {
         {id: 5, first: "Saman", last: "Rajabi"},
       ]} onClick={(item)=> console.log(item)} /> */}
       {/* <Check value="Armin" isNagative /> */}
-      <Toast message="Hello world" position="center" />
+      {/* <Toast message="Hello world" position="center" /> */}
+      <Button variant="balck" type="submit" onClick={()=> console.log("clicked")}>
+        hello
+        </Button>
     </div>
   );
 }
